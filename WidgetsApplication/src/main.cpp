@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     qInfo() << "Built using Qt v" QT_VERSION_STR;
-    qInfo() << "Starting WidgetsApplication...";
+    qInfo() << "Starting Widgets Application...";
 
     MainWindow w;
     w.show();
