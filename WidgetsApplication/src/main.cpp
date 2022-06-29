@@ -1,13 +1,19 @@
-#include <stdio.h>
 
-#include <QCoreApplication>
+#include <QApplication>
 #include <QDebug>
 
-int main(int argc, char **argv)
+#include "Qt6_config.h"
+#include "mainwindow.h"
+
+int main(int argc, char *argv[])
 {
-    QCoreApplication app(argc, argv);
+    QApplication a(argc, argv);
 
-    qInfo() << "Starting event loop...";
+    qInfo() << "Built using Qt v" QT_VERSION;
+    qInfo() << "Starting WidgetsApplication...";
 
-    return app.exec();
+    MainWindow w;
+    w.show();
+
+    return a.exec();
 }
