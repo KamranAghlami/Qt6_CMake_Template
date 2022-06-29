@@ -1,13 +1,14 @@
-#include <stdio.h>
-
 #include <QCoreApplication>
 #include <QDebug>
 
-int main(int argc, char **argv)
+#include "Qt6_config.h"
+
+int main(int argc, char *argv[])
 {
-    QCoreApplication app(argc, argv);
+    QCoreApplication a(argc, argv);
 
-    qInfo() << "Starting event loop...";
+    qInfo() << "Built using Qt v" QT_VERSION;
+    qInfo() << "Starting CoreApplication...";
 
-    return app.exec();
+    return a.exec();
 }
