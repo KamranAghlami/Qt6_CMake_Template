@@ -16,8 +16,6 @@ file(GLOB_RECURSE SOURCES "src/*.h" "src/*.cpp" "src/*.ui" "include/*.h")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-configure_file(include/${PROJECT_NAME}_config.h.in ${PROJECT_NAME}_config.h)
-
 target_include_directories(${PROJECT_NAME}
   PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
