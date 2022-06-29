@@ -1,1 +1,1 @@
-# Qt6_CMake_Templatex
+# Qt6_CMake_Template
